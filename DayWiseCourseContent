@@ -1,0 +1,39 @@
+7/7 [Day 1]
+1. Introduction to Java
+2. Java, Intellij Installation, Java IDE(Integrated Development Environment)
+3. How Java works? JDK vs JRE vs JVM ? ByteCode?
+4. Demonstrate how bytecode is generated from java file from command line and intellij.
+4. Hello World in Java
+5. Variables, Loops, If-Else, If-ElseIf, Switch.
+6. Class and Objects
+
+7/8 [Day 2]
+OOP Concepts
+Encapsulation
+Inheritance, A extends B,Types of Inheritance, Why Multiple Inheritance is not allowed in Java (A extends B,C ??).
+Q :: Create a class TUStudent which has regNo, create another class TexasStudent and inherit property of TUStudent.
+Polymorphism
+Abstraction
+
+7/9 [Day 3]
+Q: Create a Charger (charge) interface and SamsungCharger and RedmiCharger as its implementation.
+Create a Mobile class to show how any charger can be used to charge the mobile.
+Instance Variable vs Local Variable vs Global Variable.
+static Variable, static methods, Final
+This vs Super
+
+7/10 [Day 4]
+Static Block
+Exception Handling (Exception, Checked vs Unchecked, try-catch, finally,throw, throws), Exception Propagation, Error
+
+7/11 [Day 5]
+String, String Pool, String Builder, Immutable String
+Wrapper class
+Generics, AutoBoxing and Unboxing
+Array, Collections, List
+
+7/12 [Day 6]
+Set (HashSet), Map (HashMap),
+Functional Interface, Lambda Expression
+
+
