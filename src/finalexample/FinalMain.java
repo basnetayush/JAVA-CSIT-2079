@@ -1,4 +1,4 @@
-package oops.finalexample;
+package finalexample;
 
  class A{
     public final   void myMethod(){

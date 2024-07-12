@@ -1,4 +1,4 @@
-package oops.variable;
+package variable;
 
 public class TCMITTexasStudent extends TexasStudent{
 

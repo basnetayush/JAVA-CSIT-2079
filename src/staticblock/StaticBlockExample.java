@@ -1,4 +1,4 @@
-package oops.staticblock;
+package staticblock;
 
 public class StaticBlockExample {
     private static String staticVariable;

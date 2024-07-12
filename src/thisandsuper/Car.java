@@ -1,4 +1,4 @@
-package oops.thisandsuper;
+package thisandsuper;
 
 /*
 * this.variableName refer to variable of current instance
