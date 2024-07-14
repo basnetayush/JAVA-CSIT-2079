@@ -36,4 +36,10 @@ Array, Collections, List
 Set (HashSet), Map (HashMap),
 Functional Interface, Lambda Expression
 
+7/14 [Day 7]
+Stream APIs
+Intermediate(map,filter) and Terminate (collect, forEach) Operations
+Why Lambda Expression is needed
+Example Question
+
 
