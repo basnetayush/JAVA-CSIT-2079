@@ -4,5 +4,7 @@ public class MyClient {
     public static void main(String[] args) {
         WebSiteMaker webSiteMaker=new JavaWebSiteMaker();
         webSiteMaker.makeWebSite();
+        webSiteMaker.defaultMethod();
+        webSiteMaker.defaultMethod2();
     }
 }
