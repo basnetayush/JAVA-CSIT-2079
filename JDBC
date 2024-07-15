@@ -1,0 +1,14 @@
+JDBC (Java Database Connectivity)
+=> connect java applications to database
+
+1. Database Installed (Postgres, MySQL, Oracle, MSSQL)
+2. Database Client (DBeaver, Intellij Ultimate Database Client)
+3. JDBC Driver (Download as per your database. For postgres we use postgres jdbc driver)
+
+JDBC Steps:
+1. Register the Driver :: may not be needed in new java projects.
+2. Database Connection i.e connection of application to database.
+3. SQL Query.
+4. Statement according to query and execute the statement.
+5. ResultSet (query result) and map to our required class.
+6. Close the Connection.
