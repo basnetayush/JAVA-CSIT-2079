@@ -6,6 +6,8 @@ public class PublicMain {
     public static void main(String[] args) {
         Student s1=new Student();
         String name = s1.name;
-//        s1.age;
+    //        s1.age;
+
+        CloseFriend cf=new CloseFriend();
     }
 }
