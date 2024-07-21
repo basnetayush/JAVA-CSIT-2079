@@ -7,7 +7,6 @@ import com.texas.professional.repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -20,7 +19,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void saveUser(UserDto userDto) {
-        User user=new User();
+        User user = new User();
         user.setUsername(userDto.getUsername());
         user.setAddress(userDto.getAddress());
         user.setPassword(userDto.getPassword());
@@ -42,7 +41,7 @@ public class UserServiceImpl implements UserService {
             userDto.setUsername(user.getUsername());
             userDto.setRole(user.getRole());
             return userDto;
-        }else{
+        } else {
             throw new ResourceNotFoundException("User not found");
         }
     }
@@ -62,18 +61,29 @@ public class UserServiceImpl implements UserService {
         return userDtoList;
     }
 
+    /*
+    * room add garne bela ma OWNER le matra garna paunu paryo
+    * */
+
+
+
+
     @Override
     public void updateUser(UserDto userDto) {
         // fetch my details to update
         Integer id = userDto.getId();
-        User user = userRepo.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
+        User user = getUser(userDto.getId());
         // update detail
         user.setFullName(userDto.getFullName());
         user.setAddress(userDto.getAddress());
         user.setUsername(userDto.getUsername());
         // save
         userRepo.save(user);
+    }
+
+    public User getUser(Integer id){
+        return userRepo.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
     }
 
 

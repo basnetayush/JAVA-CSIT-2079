@@ -10,6 +10,6 @@ public class EnumMain {
 
 
         Role enumROle=Role.ADMIN;
-        enumROle=Role.CUSTOMER;
+//        enumROle=Role.CUSTOMER;
     }
 }

@@ -1,12 +1,18 @@
 package com.texas.professional.dto;
 
 import com.texas.professional.model.Bike;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
 public class BikeDto {
     private Integer id;
 
+    @NotNull(message = "Name cannot be null")
+    @NotEmpty(message = "Name cannot be empty")
     private String name;
 
+    @NotNull(message = "Bike cc cannot be null")
+    @NotEmpty(message = "Bike cc cannot be empty")
     private String cc;
 
     private Integer userId;

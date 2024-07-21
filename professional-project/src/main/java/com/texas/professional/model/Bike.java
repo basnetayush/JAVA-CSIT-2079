@@ -15,7 +15,7 @@ public class Bike {
     private String cc;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "patient_id")
     private User user;
 
     public Bike() {
