@@ -5,6 +5,7 @@ import com.texas.professional.exception.ResourceNotFoundException;
 import com.texas.professional.model.User;
 import com.texas.professional.repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,12 +18,19 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepo userRepo;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
     @Override
     public void saveUser(UserDto userDto) {
         User user = new User();
         user.setUsername(userDto.getUsername());
         user.setAddress(userDto.getAddress());
-        user.setPassword(userDto.getPassword());
+
+        String rawPassword = userDto.getPassword();
+        String encodedPassword = passwordEncoder.encode(rawPassword);
+        user.setPassword(encodedPassword);
+
         user.setFullName(userDto.getFullName());
         user.setRole(userDto.getRole());
         userRepo.save(user);
